@@ -11,7 +11,8 @@
     <?php include("./header.php"); ?>
     <h1>Home Page</h1>
     <h3>
-        <?php echo $x; ?>
+        <!-- <?php echo $x; ?> -->
+         <?php include('oop.php'); ?>
     </h3>
 </body>
 </html>
