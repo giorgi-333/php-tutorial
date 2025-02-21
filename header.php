@@ -3,6 +3,7 @@
         <div>
             <a href="index.php">Home</a>
             <a href="news.php">News</a>
+            <a href="users.php">მომხმარებლები</a>
             <a href="registration.php">რეგისტრაცია</a>
         </div>
 </header>
