@@ -3,12 +3,6 @@
 // სერვერის სახელი, მომხარებელი, პაროლი, ბაზის სახელი
 $connect = new mysqli("localhost","coding","123","php_tutorial");
 
-if($connect->connect_error) {
-    die($connect->connect_error);
-} else {
-    echo 'წარმატებით დაკავშირდა <br>';
-}
-
 $sql = "SELECT * FROM users";
 $result = $connect->query($sql);
 
