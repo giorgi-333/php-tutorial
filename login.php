@@ -10,7 +10,7 @@
     <form method="post">
         <input type="text" name="gmail" placeholder="მეილი"> <br> <br>
         <input type="text" name="paswrod" placeholder="პაროლი"> <br> <br>
-        <button type="submit">შესვლა</button>
+        <button name="login" type="submit">შესვლა</button>
     </form>
 </body>
 </html>
@@ -18,7 +18,7 @@
 <?php
 include("./db_conn.php");
 
-if($_SERVER["REQUEST_METHOD"] == "POST") {
+if(isset($_POST["login"])) {
 
     $gmail = $_POST["gmail"];
     $paswrod = $_POST["paswrod"];

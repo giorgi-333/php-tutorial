@@ -12,7 +12,7 @@
         <input type="text" name="fullName" placeholder="სახელი და გვარი"> <br> <br>
         <input type="text" name="gmail" placeholder="მეილი"> <br> <br>
         <input type="text" name="paswrod" placeholder="პაროლი"> <br> <br>
-        <button type="submit">რეგისტრაცია</button>
+        <button name="register" type="submit">რეგისტრაცია</button>
         <button type="reset">გასუფთავება</button>
     </form>
 </body>
@@ -21,7 +21,7 @@
 <?php
 include("./db_conn.php");
 
-if($_SERVER["REQUEST_METHOD"] == "POST") {
+if(isset($_POST["register"])) {
 
     $fullName = $_POST["fullName"];
     $gmail = $_POST["gmail"];
