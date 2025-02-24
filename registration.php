@@ -19,12 +19,22 @@
 </html>
 
 <?php
+include("./db_conn.php");
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $fullName = $_POST["fullName"];
     $gmail = $_POST["gmail"];
     $paswrod = $_POST["paswrod"];
+
+    // ბაზა
+    $sql = "INSERT INTO `users`(`fullName`, `gmail`, `paswrod`) VALUES ('$fullName','$gmail','$paswrod')";
+
+    if($connect->query($sql)) {
+        echo "რეგიტრაცია წარმატებით გაიარეთ<br>";
+    }
+
+    $connect->close();
 
     print "სახელი გვარი: $fullName <br> მეილი: $gmail <br> პაროლი: $paswrod";
 }
