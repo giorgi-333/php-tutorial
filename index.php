@@ -1,5 +1,7 @@
-
-<?php require("./functions.php") ?>
+<?php 
+session_start();
+require("./functions.php") 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +11,15 @@
 </head>
 <body>
     <?php include("./header.php"); ?>
+    <h1>
+         <?php 
+            if(isset($_SESSION["fullName"])) {
+                echo "მომხამარებელი: " . $_SESSION["fullName"];
+            } else {
+                echo "გაიარეთ ავტორიზაცია";
+            }
+         ?>
+    </h1>
     <h1>Home Page</h1>
     <h3>
         <!-- <?php echo $x; ?> -->
