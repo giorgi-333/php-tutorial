@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>რეგისტრაცია</title>
-</head>
-<body>
-    <?php include("./header.php"); ?>
+    
+    <?php 
+        $titleText = "რეგისტრაცია";
+        include("./header.php");
+     ?>
     <h1>გაიარეთ რეგისტრაცია</h1>
     <!-- action="form.php" -->
     <form method="post">

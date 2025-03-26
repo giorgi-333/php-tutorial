@@ -1,13 +1,7 @@
-<?php session_start(); ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ავტორიზაცია</title>
-</head>
-<body>
-    <?php include("./header.php"); ?>
+<?php 
+        $titleText = "ავტორიზაცია";
+        include("./header.php"); 
+    ?>
     <h1>
     <?php 
             if(isset($_SESSION["fullName"])) {
