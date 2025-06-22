@@ -8,3 +8,25 @@ function getInfo() {
             console.log(text);
         })
 }
+
+// let posts = [
+//     {
+//         title: 'tbilisi',
+//         text: 'about tbilisi city'
+//     },
+//     {
+//         title: 'qutaisi',
+//         text: 'about qutaisi city'
+//     },
+// ]
+
+function getPosts() {
+    fetch('./php/posts.php')
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            console.log(data[0].name);
+        })
+}
+
+getPosts();
